@@ -2,10 +2,16 @@
   "name": "@sole/raspberrysensor",
   "version": "1.0.0",
   "description": "We will see",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "blink-test": "sudo node test/blink-led.js"
   },
   "author": "sole",
-  "license": "TBD"
+  "license": "TBD",
+  "dependencies": {
+    "express": "^4.17.1",
+    "johnny-five": "^2.0.0",
+    "raspi-io": "^11.0.0"
+  }
 }
