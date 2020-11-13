@@ -4,7 +4,7 @@
   "description": "We will see",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "blink-test": "sudo node test/blink-led.js"
   },
   "author": "sole",
@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "johnny-five": "^2.0.0",
+    "nodemon": "^2.0.6",
     "raspi-io": "^11.0.0"
   }
 }
