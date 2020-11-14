@@ -58,6 +58,10 @@ Install node: run the script in /bootstrap/download-node.sh
 ./bootstrap/download-node.sh
 ```
 
+#### Node dependencies
+
+cd to the cloned repo and run `npm install`.
+
 #### Arduino set up
 
 It needs the StandardFirmata flashed on it. I guess you could do this with the Arduino CLI somehow, but I haven't figured that out.
@@ -65,7 +69,16 @@ It needs the StandardFirmata flashed on it. I guess you could do this with the A
 Or you can just be lazy and use the old good Arduino IDE:
 
 ```bash
+# If you're using a Mac, there's probably something similar for Linux
 brew install arduino
 ```
 
 then open the IDE, navigate to _Examples... Firmata... StandardFirmata_. With the Arduino connected to the computer, you can then flash this onto the board. And then Johnny Five will be able to talk to it. Yay!
+
+To test the set up works, you can run the example blink script:
+
+```bash
+npm run j5:blink
+```
+
+(press Ctrl+C twice to leave).

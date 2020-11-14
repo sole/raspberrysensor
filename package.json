@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "blink-test": "sudo node test/blink-led.js"
+    "j5:blink": "node test/j5/blink.js"
   },
   "author": "sole",
   "license": "TBD",
